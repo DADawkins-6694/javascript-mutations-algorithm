@@ -1,0 +1,19 @@
+** start of script.js **
+
+function mutation(arr) {
+  // Convert both strings to lowercase to ignore case
+  let first = arr[0].toLowerCase();
+  let second = arr[1].toLowerCase();
+
+  // Check every letter in second is in first
+  for (let i = 0; i < second.length; i++) {
+    if (first.indexOf(second[i]) === -1) {
+      return false; // letter not found
+    }
+  }
+  return true; // all letters found
+}
+
+
+** end of script.js **
+
